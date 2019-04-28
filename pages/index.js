@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Text from '../components/Text'
+import Spacer from '../components/Spacer'
 import ActionItems from '../components/ActionItems'
 import SocialLinks from '../components/SocialLinks'
 import Header from '../components/Header'
@@ -13,6 +14,7 @@ const Index = () => (
         <Text as="h1" size={6} color="secondary" weight="bold">
           Organizing an event?
         </Text>
+        <Spacer size={2} />
         <Text size={5}>Take the stress away and let the experts at it!</Text>
         <ActionItems />
         <Text as="h2" size={5}>

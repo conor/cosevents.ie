@@ -13,6 +13,10 @@ const headerStyles = css`
 const Header = () => (
   <header css={headerStyles}>
     <Head>
+      <meta
+        name="Description"
+        content="COSevents.ie - Stress free event planning based out of Limerick, Ireland"
+      />
       <title>
         COSevents.ie - Stress free event planning based out of Limerick, Ireland
       </title>

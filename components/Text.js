@@ -2,6 +2,7 @@ import React from 'react'
 import { css, jsx } from '@emotion/core'
 
 import theme from '../lib/theme'
+import { fadeInUp } from '../lib/animations'
 
 const Text = ({
   as = 'p',
@@ -10,6 +11,9 @@ const Text = ({
   color = 'white',
   weight = 'normal',
   lineHeight = 'heading',
+  animate = false,
+  animationDuration = '1s',
+  animationDelay = '0s',
 }) =>
   jsx(as, {
     css: css`
@@ -20,6 +24,11 @@ const Text = ({
       line-height: ${theme.lineHeights.heading};
       margin: 0;
       padding: 0;
+      ${animate &&
+        css`
+          animation: ${fadeInUp} ${animationDuration} ease;
+          animation-delay: ${animationDelay};
+        `}
     `,
     children: children,
   })

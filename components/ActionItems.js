@@ -27,7 +27,12 @@ const ulStyle = css`
 const ActionItems = () => (
   <ul css={ulStyle}>
     {actionItems.map((item, idx) => (
-      <ActionItem key={idx} {...item} />
+      <ActionItem
+        key={idx}
+        animate={true}
+        animationDuration={`${1.2 + idx / 10}s`}
+        {...item}
+      />
     ))}
   </ul>
 )

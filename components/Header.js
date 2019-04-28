@@ -3,11 +3,13 @@ import Head from 'next/head'
 import { css } from '@emotion/core'
 
 import theme from '../lib/theme'
+import { fadeInDown } from '../lib/animations'
 
 import Logo from '../icons/Logo'
 
 const headerStyles = css`
   margin: ${theme.spacing.x3} 0 ${theme.spacing.x6};
+  animation: ${fadeInDown} 1s ease;
 `
 
 const Header = () => (

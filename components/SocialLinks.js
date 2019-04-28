@@ -2,6 +2,7 @@ import React from 'react'
 import { css } from '@emotion/core'
 
 import theme from '../lib/theme'
+import { fadeInUp } from '../lib/animations'
 
 import Instagram from '../icons/Instagram'
 import Facebook from '../icons/Facebook'
@@ -13,6 +14,10 @@ const ulStyle = css`
   flex-direction: row;
   & > li {
     padding-right: ${theme.spacing.x3};
+    animation: ${fadeInUp} 1.8s ease;
+  }
+  & > li:nth-child(odd) {
+    animation: ${fadeInUp} 1.7s ease;
   }
 `
 

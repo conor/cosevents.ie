@@ -19,7 +19,7 @@ const Index = () => (
         animate={true}
         animationDuration="1.1s"
       >
-        Organizing an event?
+        Organising an event?
       </Text>
       <Spacer size={2} />
       <Text size={5} animate={true} animationDuration="1.2s">

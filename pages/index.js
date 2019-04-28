@@ -1,45 +1,24 @@
 import React from 'react'
-import Head from 'next/head'
+
+import Text from '../components/Text'
+import ActionItems from '../components/ActionItems'
+import SocialLinks from '../components/SocialLinks'
+import Header from '../components/Header'
 
 const Index = () => (
   <>
-    <Head>
-      <title>
-        COSevents.ie - Stress free event planning based out of Limerick, Ireland
-      </title>
-    </Head>
-    <header>
-      <h1>
-        <a href="/">COSevents.ie</a>
-      </h1>
-    </header>
+    <Header />
     <main>
       <div>
-        <h1>Organizing an event?</h1>
-        <p>Take the stress away and let the experts at it!</p>
-        <ul>
-          <li>
-            <a href="tel:00353872291753">Call us</a>
-          </li>
-          <li>
-            <a href="mailto:caraghoshea@gmail.com">Email us</a>
-          </li>
-          <li>
-            <a href="https://api.whatsapp.com/send?phone=+353872291753">
-              Chat to us
-            </a>
-          </li>
-        </ul>
-        <h2>Or just follow our latest adventures on social media</h2>
-        <ul>
-          <li>
-            <a href="https://www.instagram.com/cosevents.ie/">Instagram</a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/COSevents.ie/">Facebook</a>
-          </li>
-          {/*<li><a href="">Twitter</a></li>*/}
-        </ul>
+        <Text as="h1" size={6} color="secondary" weight="bold">
+          Organizing an event?
+        </Text>
+        <Text size={5}>Take the stress away and let the experts at it!</Text>
+        <ActionItems />
+        <Text as="h2" size={5}>
+          Or just follow our latest adventures on social media
+        </Text>
+        <SocialLinks />
       </div>
     </main>
   </>

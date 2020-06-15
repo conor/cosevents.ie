@@ -20,7 +20,7 @@ const globalStyles = css`
   body {
     margin: 0;
     background: ${theme.colors.tertiary};
-    padding: ${theme.spacing.x3};
+    padding: 0;
   }
 `
 
